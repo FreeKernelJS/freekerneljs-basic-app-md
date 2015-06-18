@@ -75,7 +75,3 @@ It can be used as a starting point and basis to develop your own application.
 - `services`: this folder contains any services/providers/factories/utilities being used in the application.
 - `widgets`: this folder contains the different directives.
 - `views`: this folder contains views that represent pages (one view per page). With the exception of the main controller - this controller is responsible for managing global aspects of the application so it doesn't have a view.
-
-
-
-
