@@ -1,40 +1,50 @@
 'use strict';
 
 /**
- * @ngdoc controller
+ * @ngdoc object
  * @name fkjs.services.http
  *
  * @description
- * Client-server communication.
+ * Responsible for client-server communication.
+ * Provides the following services:
+ * 
+ * # httpService
+ * The http service provides communication with the remote HTTP servers 
+ * via the browser's XMLHttpRequest object.
+ * 
+ * @requires $http
+ * @requires $rootScope
+ * @requires $q
+ * @requires $log
  */
 angular.module('fkjs.services.http', [])
 
 
-/**
- * @ngdoc service
- * @name httpService
- * @methodOf fkjs.services.http
- * 
- * @param {string} url The URL of the get request.
- *
- * @description
- * The http service provides communication with the remote HTTP servers 
- * via the browser's XMLHttpRequest object.
- * Interceptors can be added by listening to any of the broadcasting events:
- * - beforeAjaxRequest
- * - ajaxRequestSuccess
- * - ajaxRequestError
- * 
- * @example
- * <pre>
- * httpService.get('url.json').then(function(data){ 
- *     console.log(data); 
- * });
- * </pre>
- * 
- * @returns {object} Returns the JSON object from the response.
- */
 .service('httpService', function($http, $rootScope, $q, $log){
+    
+    /**
+     * @ngdoc function
+     * @name fkjs.services.http#httpService
+     * @methodOf fkjs.services.http
+     *
+     * @description
+     * Send get request to server.
+     * Interceptors can be added by listening to any of the broadcasting events:
+     * - beforeAjaxRequest
+     * - ajaxRequestSuccess
+     * - ajaxRequestError
+     * 
+     * @param {string} url The URL of the get request.
+     * 
+     * @example
+     * <pre>
+     * httpService.get('url.json').then(function(data){ 
+     *     console.log(data); 
+     * });
+     * </pre>
+     * 
+     * @return {object} Returns the promise which represents the JSON object from the response.
+     */
     this.get = function(url){
         $rootScope.$broadcast('beforeAjaxRequest');
 
