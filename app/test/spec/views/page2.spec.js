@@ -11,11 +11,11 @@ describe('[module fkjs.views.page2]', function () {
     // Initialize the controller and scope
     beforeEach(inject(function ($controller, httpService) {
         var $scope = {};
-        Page2Ctrl = $controller('Page2ViewController', {$scope: $scope});
+        Page2Ctrl = $controller('Page2Controller', {$scope: $scope});
     }));
     
     // run tests
-    describe('Page2ViewController ::', function () {
+    describe('Page2Controller ::', function () {
         it('page2 view should have a controller', inject(function () {
             expect(Page2Ctrl).toBeDefined();
         }));

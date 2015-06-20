@@ -8,3 +8,7 @@ This is the API Reference welcom page.
 
 You can navigate by using the search bar or the links on the left.  
 Start here: [app overview](#/api/app)
+
+### Set Configurations for grunt-ngdocs
+This documentation was generated using [grunt-ngdocs](https://github.com/m7r/grunt-ngdocs).  
+Refer to their GitHub repository to find out how to change configurations for the documentation.

@@ -10,11 +10,11 @@ describe('[module fkjs.views.home]', function () {
     // Initialize the controller and a mock scope
     beforeEach(inject(function ($controller) {
         scope = {};
-        HomeCtrl = $controller('HomeViewController', {$scope: scope});
+        HomeCtrl = $controller('HomeController', {$scope: scope});
     }));
     
     // run tests
-    describe('HomeViewController ::', function () {
+    describe('HomeController ::', function () {
         it('home view should have a controller', inject(function () {
             expect(HomeCtrl).toBeDefined();
         }));

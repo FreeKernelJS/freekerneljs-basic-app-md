@@ -1,14 +1,18 @@
 'use strict';
 
-
 angular.module('fkjs.widgets.navbar', [])
+
 
 /**
  * @ngdoc directive
- * @name fkjs.widgets.fkjsNavbar
+ * @name fkjs.widgets.navbar:fkjsNavbar
+ * 
+ * @requires $state
+ * @requires $rootScope
  *
  * @description
- * Set a list of pages in a bar, manage click on each of the items in list.
+ * UI widget for a side navigation menu.
+ * Displays a list of links to pages in a menu bar, and manages clicks on each of the items in the list.
  * 
  * @usage
  * <fkjs-navbar></fkjs-navbar>
@@ -26,7 +30,7 @@ angular.module('fkjs.widgets.navbar', [])
             /*
              * set "active" css on selected menu item,
              * fire event to notify header regarding this change, and update its text.
-             * Please note that it is relying on the navbarItems array structure.
+             * >> Please note that it is relying on the navbarItems array structure (see below).
              */
             $scope.$on('$stateChangeSuccess', function(event, current){
                 var stateName = $state.$current.self.name;

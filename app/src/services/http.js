@@ -5,7 +5,7 @@
  * @name fkjs.services.http
  *
  * @description
- * Responsible for client-server communication.
+ * Responsible for client-server communication.  
  * Provides the following services:
  * 
  * # httpService
@@ -28,7 +28,7 @@ angular.module('fkjs.services.http', [])
      * @methodOf fkjs.services.http
      *
      * @description
-     * Send get request to server.
+     * Sends get request to server.  
      * Interceptors can be added by listening to any of the broadcasting events:
      * - beforeAjaxRequest
      * - ajaxRequestSuccess

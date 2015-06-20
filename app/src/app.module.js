@@ -1,5 +1,5 @@
 /**
- * @ngdoc interface
+ * @ngdoc object
  * @name app.src.app-module-js
  *
  * @description
