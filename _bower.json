@@ -1,6 +1,6 @@
 {<% var ngVer = "~1.4.0" %>
-  "name": "<%= slugname %>",
-  "version": "<%= props.version %>",
+  "name": "<%= name %>",
+  "version": "<%= version %>",
   "dependencies": {
       
     <% if (angularModule) { %>
