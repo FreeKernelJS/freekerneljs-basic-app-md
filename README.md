@@ -8,16 +8,16 @@ It can be used as a starting point and basis to develop your own application.
 
 
 ##### Features:
-- Routing and sharing data between different sections in the application
-- Modular architecture that can be extended
-- Best practices for performance
+- Routing and sharing data between different sections in the application.
+- Modular architecture that can be extended.
+- Best practices for performance.
 - Responsive UI
 - Http service
 - Localization
-- <a href="http://sass-lang.com/">Sass</a> CSS preprocessors
-- Documentation format to be used with ngdoc
-- Unit testing with Jasmine
-- HTML 5 structure
+- <a href="http://sass-lang.com/">Sass</a> CSS preprocessors.
+- Documentation format and configurations, to be used with ngdoc.
+- Unit testing with Jasmine.
+- HTML 5 structure.
 
 
 
@@ -42,6 +42,8 @@ It can be used as a starting point and basis to develop your own application.
     ├── data/
     │   ├── locale/
     │   └── server/
+    ├── docs/
+    │   └── content/    
     ├── src/
     │   ├── services/
     │   │   └── http.js
@@ -73,6 +75,8 @@ It can be used as a starting point and basis to develop your own application.
 - `data`: mock-up data. Both "server" and "locale" folders can be moved to the back-end in a real live environment.
   * `server`: this folder contains mock up JSON.
   * `locale`: this folder contains files for localization.
+- `docs`: this folder contains the output files generated with angular-ngdocs.
+  * `content`: put any custome content for the documentation inside this folder.
 - `src`: this folder contains all JavaScript source codes.
   * `services`: this folder contains any utilities and services being used by the application.
   * `widgets`: this folder contains the different directives/UI components/UI widgets.
