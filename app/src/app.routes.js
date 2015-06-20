@@ -11,7 +11,6 @@
  * Each page is declared in a different state.
  * 
  * @example
- * 
  * <pre>
  * .config(function($stateProvider, $urlRouterProvider){
  *      // Redirects and Otherwise
