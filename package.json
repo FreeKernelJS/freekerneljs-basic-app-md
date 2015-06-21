@@ -1,6 +1,6 @@
 {
   "name": "freekerneljs-basic-app-md",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "A basic application template to be used with generator-freekerneljs. Depends on AngularJS and Angular Material.",
   "license": "MIT",
   "repository": "https://github.com/FreeKernelJS/freekerneljs-basic-app-md",
