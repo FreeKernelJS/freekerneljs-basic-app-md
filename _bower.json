@@ -15,5 +15,6 @@
     "script.js": {
       "main": "dist/script.js"
     }
-  }
+  },
+  "fkjs_theme": ""
 }
