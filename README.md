@@ -1,6 +1,6 @@
 # freekerneljs-basic-app-md
 
-A basic application template to be used with [FreeKernelJS](https://github.com/FreeKernelJS/generator-freekerneljs).  
+A basic application template to be used with [FreeKernelJS Generator](https://github.com/FreeKernelJS/generator-freekerneljs).  
 This template uses AngularJS as the MVC framework, combined with Angular Material to provide the UI design.  
 It can be used as a starting point and basis to develop your own application.
 
