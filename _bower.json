@@ -2,6 +2,7 @@
   "name": "<%= name %>",
   "version": "<%= version %>",
   "dependencies": {
+    "jquery": "^2.1.4",
     "angular": "<%= ngVer %>",
     "angular-mocks": "<%= ngVer %>",
     "angular-ui-router": "~0.2.15",
